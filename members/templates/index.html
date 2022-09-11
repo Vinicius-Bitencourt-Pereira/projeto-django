@@ -7,7 +7,15 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Olá Mundo!</h1>
-    <p>Bem vindo ao meu primeiro projeto Django!</p>
+    <h1>Members</h1>
+    <table border='1'>
+        {% for x in my_members %}
+        <tr>
+            <td>{{x.id}}</td>
+            <td>{{x.firstname}}</td>
+            <td>{{x.lastname}}</td>
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
