@@ -11,7 +11,7 @@
     <table border='1'>
         {% for x in my_members %}
         <tr>
-            <td>{{x.id}}</td>
+            <td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
             <td>{{x.firstname}}</td>
             <td>{{x.lastname}}</td>
             <td><a href="delete/{{ x.id }}">delete</a></td>
@@ -19,6 +19,6 @@
         {% endfor %}
     </table>
     <p>
-        <a href="/members/add">Add member</a></p>
+        <a href="/add">Add member</a></p>
 </body>
 </html>
